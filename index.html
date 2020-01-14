@@ -1,57 +1,44 @@
 <!DOCTYPE html>
+<!-- CSS Stylesheets with Relative Paths -->
 <html lang="en-us">
 <head>
   <meta charset="UTF-8">
-  <title>Brianna McKelvey</title>
+  <title>bmckelv30 bio</title>
+
+  <!-- This line is money! It points your HTML to the CSS file. -->
+  <!-- Notice the "relative" pathway? It matches a file inside our current directory's "assets" folder. Open it to see our style rules. -->
+  <link rel="stylesheet" type="text/css" href="bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
 </head>
 
 <body>
-  <!--Header-->
-   <h1>Brianna McKelvey</h1>
-   <!-- Image -->
-   <span title="wee!"><img src="https://images.mentalfloss.com/sites/default/files/styles/width-constrained-728/public/75307-gettyimages-916666626.jpg" alt="Smiling dog proudly jumping through a hoop" /></span>
-   <br>
-   <!-- Text describing who I am -->
-   <h2>About me</h2>
-   <text>I am currently studying HTML as part of the UNC Data Visualization Bootcamp.</text>
-   <br>
-   <text>I like dogs.</text>
-   <br>
-    <!-- Create an unordered list -->
-    <h2>Let's get social</h2>
-    <li><a href="https://facebook.com/" target="_blank">Opens FB in New Tab</a></li>
-    <li><a href="https://twitter.com/" target="_blank">Opens Twitter in New Tab</a></li>
-    <li><a href="https://github.com/bmckelv30" target="_blank">Opens Github in New Tab</a></li>
-  <br>
-  <table>
-    <thead>
-        <tr>
-            <th colspan="4" style="background-color:lightgray">Fave things</th>
-        </tr>
-        <tr>
-            <th>Movies</th>
-            <th>Songs</th>
-            <th>Books</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Amelie</td>    
-            <td>Under the Bridge</td>
-            <td>The Brothers Karamazov</td>
-        </tr>
-        <tr>
-            <td>The Princess Bride</td>    
-            <td>Clarity</td>
-            <td>Charlie and the Chocolate Factory</td>
-        </tr>
-        <tr>
-            <td>500 Days of Summer</td>    
-            <td>Standup</td>
-            <td>The Great Gatsby</td>
-        </tr>
-    </tbody>
-  </table>
+
+  <div class="jumbotron">
+    <h1 class="display-3">Nice to meet you!</h1>
+    <p class="lead">Brianna McKelvey's Bio</p>
+  </div>
+
+  <main class="container">
+    <section id="main-bio">
+      <section id="figure">
+        <img id="bio-image" src="images/BMimg.jpg" width="200" height="300" alt="Brianna McKelvey">
+      </section>
+      <p>A driven, detail-oriented Data Analyst with a passion for telling easy to understand stories with complex data. Adept at working independently and collaborating as part of a team to take in information from a wide variety of sources and effectively communicate concepts to diverse audiences. Intellectually curious, enjoys thinking critically and creatively to tackle challenges with a great desire to learn and continuously improve.</p>
+    </section>
+
+    <div class="card border-primary mb-3" style="max-width: 20rem;"></div>
+      <aside id="contact-info">
+        <h2>Contact Info</h2>
+        <ul>
+          <li><strong>Email:</strong> <a href="#">bmckelvey30@gmail.com</a></li>
+          <li><strong>Github:</strong> <a href="#">bmckelv30</a></li>
+          <li><strong>LinkedIn:</strong> <a href="#">briannamckelvey</a></li>
+          <li><strong>Portfolio:</strong> <a href="#">coming soon</a></li>
+        </ul>
+      </aside>
+    </div>
+  </main>
+
 </body>
 
 </html>
